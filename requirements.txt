@@ -7,7 +7,6 @@ pymupdf
 sentence-transformers
 faiss-cpu
 chromadb
-langchain-groq
 python-dotenv
 typesense
 langchain_huggingface
@@ -24,5 +23,3 @@ neo4j
 langchain-neo4j
 langchain_experimental
 py2neo
-langchain_openai
-bert_score
