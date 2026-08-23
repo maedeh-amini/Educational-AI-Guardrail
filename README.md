@@ -65,14 +65,5 @@ Educational-AI-Guardrail/
 ├── README.md                                           # Main repository overview and setup guide
 └── requirements.txt                                    # Standalone Python dependencies list
 ```
-🛠️ Setup & Installation
-
-Prerequisites
-
-    Python (defined in .python-version)
-
-    R (for statistical analysis execution)
-
-    uv (recommended) or pip
 
 
