@@ -64,10 +64,7 @@ Educational-AI-Guardrail/
 ├── LICENSE                                             # Repository open-source license
 ├── README.md                                           # Main repository overview and setup guide
 └── requirements.txt                                    # Standalone Python dependencies list
-
-
-
-
+```
 🛠️ Setup & Installation
 
 Prerequisites
@@ -77,3 +74,5 @@ Prerequisites
     R (for statistical analysis execution)
 
     uv (recommended) or pip
+
+
