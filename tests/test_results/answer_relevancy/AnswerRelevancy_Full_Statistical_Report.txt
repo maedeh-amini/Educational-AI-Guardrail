@@ -1,0 +1,37 @@
+
+	Shapiro-Wilk normality test
+
+data:  residuals(basic_lm)
+W = 0.7649, p-value < 2.2e-16
+CONCLUSION: Data violates normality assumption (p < 0.05). Non-parametric test recommended.
+
+Levene's Test for Homogeneity of Variance (center = median)
+       Df F value    Pr(>F)    
+group   3  6.2103 0.0004739 ***
+      196                      
+
+CONCLUSION: Data violates equal variance assumption (heteroscedasticity detected).
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Analysis of Variance of Aligned Rank Transformed Data
+
+Table Type: Analysis of Deviance Table (Type III Wald F tests with Kenward-Roger df) 
+Model: Mixed Effects (lmer)
+Response: art(Score)
+
+                              F Df Df.res     Pr(>F)    
+1 Architecture           6.7594  1     98 0.01076671   *
+2 DataType              15.1935  1     98 0.00017765 ***
+3 Architecture:DataType  1.0987  1     98 0.29712150    
+---
+Signif. codes:   0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+ contrast                               estimate   SE  df t.ratio p.value
+ Graph,Academic - Graph,Benchmark         -34.31 9.33 149  -3.676  0.0019
+ Graph,Academic - Semantic,Academic        -3.18 6.19  98  -0.514  0.9556
+ Graph,Academic - Semantic,Benchmark      -33.19 9.33 149  -3.556  0.0028
+ Graph,Benchmark - Semantic,Academic       31.13 9.33 149   3.335  0.0059
+ Graph,Benchmark - Semantic,Benchmark       1.12 6.19  98   0.181  0.9979
+ Semantic,Academic - Semantic,Benchmark   -30.01 9.33 149  -3.215  0.0086
+
+Degrees-of-freedom method: kenward-roger 
+P value adjustment: tukey method for comparing a family of 4 estimates 
