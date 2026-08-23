@@ -1,0 +1,4 @@
+"Effect","Eta2_partial","CI","CI_low","CI_high"
+"Architecture",0.0645232417251935,0.95,0.00852123008053694,1
+"DataType",0.134225732942592,0.95,0.046295484955801,1
+"Architecture:DataType",0.0110873054744222,0.95,0,1
