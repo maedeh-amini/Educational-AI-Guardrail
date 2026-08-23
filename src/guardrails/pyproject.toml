@@ -1,0 +1,19 @@
+[project]
+name = "graph"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bert-score>=0.3.13",
+    "datasets>=4.5.0",
+    "langchain>=1.2.9",
+    "langchain-community>=0.4.1",
+    "langchain-experimental>=0.4.1",
+    "langchain-groq>=1.1.2",
+    "langchain-neo4j>=0.8.0",
+    "langchain-openai>=1.1.9",
+    "neo4j>=6.1.0",
+    "py2neo>=2021.2.4",
+    "python-dotenv>=1.2.1",
+]
