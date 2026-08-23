@@ -1,6 +1,7 @@
 langchain
 langchain-core
 langchain-community
+langchain-groq
 pypdf
 pymupdf
 sentence-transformers
@@ -19,3 +20,9 @@ bert-score
 deepeval
 ollama
 langchain-openai
+neo4j
+langchain-neo4j
+langchain_experimental
+py2neo
+langchain_openai
+bert_score
