@@ -14,7 +14,7 @@ A Python-based framework and evaluation suite designed for building, comparing, 
 ```plaintext
 Educational-AI-Guardrail/
 ├── docs/
-│   └── Project Report.pdf                # Detailed project documentation and report
+│   └── Project Report.pdf                              # Detailed project documentation and report
 ├── plots/                                              # Generated metric visualization plots
 │   ├── answer-relevancy/
 │   ├── bertscore/
