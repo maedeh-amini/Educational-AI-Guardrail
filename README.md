@@ -12,24 +12,55 @@ A Python-based framework and evaluation suite designed for building, comparing, 
 
 # 📂 Project Structure
 
-```plaintext
-├── .deepeval/             # DeepEval configuration and test logs for RAG assessment
-├── data/
-│   ├── datasets/          # HotpotQA split and custom university Q/A pairs
-│   └── vector_store/      # Local storage for embedded document chunks
-├── faiss_store/           # FAISS index files (Add to .gitignore or Git LFS)
-├── prompts/               # Centralized system and user prompt templates
-├── src/                   
-│   ├── vectorstore.py     # Semantic embeddings and FAISS management
-│   ├── graphstore.py      # Neo4j and SimpleKGPipeline configuration
-│   └── chatbot.py         # Application entry point for the UI evaluation
+Educational-AI-Guardrail/
+├── docs/
+│   └── Project Report_ Maedeh Amini.pdf                # Detailed project documentation and report
+├── plots/                                              # Generated metric visualization plots
+│   ├── answer-relevancy/
+│   ├── bertscore/
+│   ├── contextual_precision/
+│   ├── contextual-recall/
+│   └── faithfulness/
+├── src/
+│   ├── guardrails/                                     # Knowledge Graph RAG implementation
+│   │   ├── .env                                        # Environment variables (KG pipeline)
+│   │   ├── .python-version                             # Python version specification
+│   │   ├── 1_Knowledge_Graph_Pipeline.py               # KG construction and ingestion
+│   │   ├── 2_graph_query.py                            # Cypher graph traversal logic
+│   │   ├── 3_graph_utils.py                            # Helper utilities for Neo4j
+│   │   ├── 4_graph_bertscore_evaluation_benchmark_DATA.py 
+│   │   ├── 4b_graph_bertscore_evaluation_academic_DATA.py  
+│   │   ├── 5_graph_DeepEval_evaluation.py              # DeepEval suite for KG pipeline
+│   │   ├── pyproject.toml                              # Subpackage configuration
+│   │   └── uv.lock                                     # Lockfile for environment reproducibility
+│   └── Semantic_Pipeline/                              # Semantic dense vector RAG implementation
+│       ├── faiss_vector_store/                         # Local FAISS index storage
+│       ├── .env                                        # Environment variables (Semantic pipeline)
+│       ├── .python-version                             # Python version specification
+│       ├── 1_data_loader.py                            # Document ingestion and chunking logic
+│       ├── 2_embedding.py                              # Embedding generation pipeline
+│       ├── 3_vectorstore.py                            # FAISS vector store management
+│       ├── 4_search.py                                 # Semantic similarity retrieval execution
+│       ├── 5_bertscore_evaluation.py                   # BERTScore evaluation for semantic pipeline
+│       ├── 6_DeepEval_evaluation.py                    # DeepEval suite for semantic pipeline
+│       ├── pyproject.toml                              # Subpackage configuration
+│       └── uv.lock                                     # Lockfile for environment reproducibility
 ├── tests/
-│   ├── test_cases.py      # DeepEval metric execution scripts
-│   └── art_anova.R        # R script for ART ANOVA statistical evaluation
-├── .env                   # Environment variables (API keys, DB endpoints)
-├── .gitignore             # Git ignore rules
-├── .python-version        # Specified Python runtime environment
-├── main.py                # Main execution script to run both RAG pipelines
-├── pyproject.toml         # Project metadata and dependencies
-├── requirements.txt       # Standard pip dependency list (exported from uv)
-└── uv.lock                # UV lockfile for deterministic builds
+│   ├── test_cases/                                     # R scripts for statistical hypothesis testing
+│   │   ├── art_mixed_anova_answer_relevancy.R          
+│   │   ├── art_mixed_anova_bertscore.R                 
+│   │   ├── art_mixed_anova_contextual_precision.R      
+│   │   ├── art_mixed_anova_contextual_recall.R         
+│   │   └── art_mixed_anova_faithfulness.R              
+│   └── test_results/                                   # Statistical outputs and test result logs
+│       ├── answer_relevancy/
+│       ├── bertscore/
+│       ├── contextual_precision/
+│       ├── contextual_recall/
+│       └── faithfulness/
+├── .gitignore                                          # Git ignore rules
+├── bertscore_data.csv                                  # Compiled BERTScore evaluation data
+├── DESIGN.md                                           # Architectural decisions and design rationale
+├── LICENSE                                             # Repository open-source license
+├── README.md                                           # Main repository overview and setup guide
+└── requirements.txt                                    # Standalone Python dependencies list
