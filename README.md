@@ -11,7 +11,7 @@ A Python-based framework and evaluation suite designed for building, comparing, 
   * **Modern Tooling**: Uses `uv` for lightning-fast, deterministic dependency management.
 
 # 📂 Project Structure
-
+```plaintext
 Educational-AI-Guardrail/
 ├── docs/
 │   └── Project Report_ Maedeh Amini.pdf                # Detailed project documentation and report
